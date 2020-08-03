@@ -1,0 +1,121 @@
+.main {
+
+    &__container {
+        padding: 3rem;
+        @media (min-width: 420px) {
+            padding: 4rem;
+        }
+    }   
+
+    &__text {
+        font-weight: $regular;
+        font-size: $medium;
+        color: $nickel;
+        line-height : 2.8rem;
+        margin-bottom: 2rem;
+
+        &--link:visited {
+            color: $spanish-pink;
+        }
+
+    }
+
+    &__date {
+        @extend .main__text;
+        font-family: $playfair;
+        font-size: $large;
+    } 
+
+    &__image {
+        width: min-content;
+        bottom: 1rem;
+        @media (min-width: 768px){
+            width: min-content;
+            display: flex;
+            bottom: 0rem;   
+        }
+        @media (min-width: 992px){
+            width: min-content;
+            display: flex; 
+            bottom: 3rem;
+        }
+
+        @media (min-width: 1200px) {
+            width: min-content;
+            display: flex; 
+            bottom: 3rem;
+        }
+        
+    }
+
+    &__img {
+        @media (min-width: 768px) {
+            border-radius: 10rem;
+            width: 14rem;
+            margin-left: 5rem;
+            margin-top: 2.5rem; 
+               
+        }
+       
+    }
+
+}
+
+.author {
+
+    &__contact {
+        text-align: -webkit-center;
+        @media (min-width: 768px) {
+            margin-bottom: 3rem;
+            display: block; 
+            text-align: left; 
+        }
+        
+
+    }
+
+    &__contact h2 {
+        font-family: $playfair;
+        font-weight: $black-italic;
+        font-style: italic;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width: 992px) {
+            font-family: $playfair;
+            font-weight: $black-italic;
+            font-style: italic;
+            font-size: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            float: left;
+            margin-bottom: 1rem;
+        }       
+    }
+
+    &__contact  a {
+        color: $spanish-pink;
+        font-weight: $light;
+        white-space: pre-line;
+        line-height : 1.8rem;
+        width: min-content;
+        margin-top: .8rem;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &--link:visited {
+            color: $spanish-pink;
+        }
+        &--link:hover {
+            color: $nickel;
+        }
+        &--link:active {
+            color: $platinum;
+        }
+    }
+}
